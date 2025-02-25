@@ -1,5 +1,5 @@
 general.import = [
-  "./themes/one_dark.toml"
+  "./themes/themes/one_dark.toml"
 ]
 
 [window]
