@@ -1,0 +1,11 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "params",
+        "gradient",
+        "enabled",
+        "ml_plot",
+        "local",
+        "config"
+    ]
+}
