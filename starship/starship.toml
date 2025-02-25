@@ -36,9 +36,12 @@ $line_break$character\
 palette = 'one_dark'
 
 [palettes.one_dark]
-mono0 = '#d7dae0' mono1 = '#abb2bf' mono2 = '#828997'
+mono0 = '#d7dae0'
+mono1 = '#abb2bf'
+mono2 = '#828997'
 mono3 = '#5c6370'
-mono4 = '#3f4451' color_red0 = '#e06c75'
+mono4 = '#3f4451'
+color_red0 = '#e06c75'
 color_red1 = '#be5046'
 color_green = '#98c379'
 color_yellow = '#e5c07b'
@@ -53,7 +56,8 @@ syntax_gutter = '#647382'
 syntax_accent = '#528cff'
 
 [os]
-disabled = false style = "bg:color_red0 fg:syntax_bg"
+disabled = false
+style = "bg:color_red0 fg:syntax_bg"
 format = '[ $symbol ]($style)'
 
 [os.symbols]
@@ -203,7 +207,9 @@ format = '[[ $symbol( $context) ](fg:syntax_fg bg:mono3)]($style)'
 symbol = " "
 
 [time]
-disabled = false use_12hr = true style = "bg:mono4"
+disabled = false
+use_12hr = true
+style = "bg:mono4"
 format = '[[ 󰥔 $time ](fg:syntax_fg bg:mono4)]($style)'
 
 [battery]
