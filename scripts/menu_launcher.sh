@@ -5,7 +5,7 @@ if [ -z "$TMUX" ]; then
       fzf --prompt="📌 Select an option: " --height=40% --border --info=inline --layout=reverse --color=16)
 
   case "$choice" in
-      *"New tmux session for work"*) ~/scripts/tmux-start.sh ;;
+      *"New tmux session for work"*) ./scripts/tmux-start.sh ;;
       *"New tmux default session"*) tmux new-session ;;
       *"Terminal only"*) ;;
       *"Open File Explorer"*) spf ;;
@@ -16,7 +16,7 @@ if [ -z "$TMUX" ]; then
       *"Launch Neovim"*) nvim ;;
       *"Launch Nano"*) nano ;;
       *"Launch AI Assistant"*) ollama run deepseek-r1 ;;
-      *"Update System"*) ~/scripts/update_system.sh && fastfetch && sleep 3 && exit;;
+      *"Update System"*) ./scripts/update_system.sh && fastfetch && sleep 3 && exit;;
       *"Clean Package Cache"*) sudo pacman -Sc --noconfirm && paru -Sc --noconfirm && fastfetch && sleep 3 && exit;;
       *"Open System Logs"*)
         echo -n "🔍 Enter search term: "

@@ -13,7 +13,7 @@ tmux has-session -t $SESSION 2>/dev/null
 if [[ -z "$TMUX" ]]; then
     tmux new-session -d -s $SESSION -n dev "spf"
     tmux new-window -t $SESSION:2 -n shell
-    tmux new-window -t $SESSION:3 -n git "bash -c '~/scripts/lazygit-auto.sh'"
+    tmux new-window -t $SESSION:3 -n git "bash -c './scripts/lazygit-auto.sh'"
     tmux select-window -t $SESSION:1
 fi
 

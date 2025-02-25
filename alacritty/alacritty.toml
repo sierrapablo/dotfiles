@@ -1,5 +1,5 @@
 general.import = [
-  "~/.config/alacritty/themes/themes/one_dark.toml"
+  "./themes/one_dark.toml"
 ]
 
 [window]
