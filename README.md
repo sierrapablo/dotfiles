@@ -53,7 +53,7 @@ Configuración del lanzador de aplicaciones Wofi
 Para aplicar estas configuraciones en tu sistema, clona este repositorio y crea enlaces simbólicos a los archivos en sus ubicaciones correspondientes.
 ```sh
 # Clonar el repositorio
-git clone https://github.com/tuusuario/dotfiles.git ~/.dotfiles
+git clone https://github.com/sierrapablo/dotfiles.git ~/.dotfiles
 
 # Crear enlaces simbólicos
 ln -s ~/.dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
