@@ -40,6 +40,15 @@ Configuración de tmux.
 Configuración del shell Zsh.
 - `.zshrc`: Configuración personalizada de Zsh con Oh My Zsh y Starship.
 
+### 📂 Hyprland
+Configuración del entorno de escritorio Hyprland
+
+### 📂 Waybar
+Configuración de la barra de tareas Waybar
+
+### 📂 Wofi
+Configuración del lanzador de aplicaciones Wofi
+
 ## Instalación
 Para aplicar estas configuraciones en tu sistema, clona este repositorio y crea enlaces simbólicos a los archivos en sus ubicaciones correspondientes.
 ```sh
@@ -51,11 +60,9 @@ ln -s ~/.dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ln -s ~/.dotfiles/nvim ~/.config/nvim
 ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+...
 ```
 
 ## Autor
 Pablo Sierra - [@sierrapablo](https://github.com/sierrapablo)
-
-## Licencia
-Este repositorio está bajo la licencia MIT.
 
