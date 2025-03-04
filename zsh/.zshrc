@@ -1,3 +1,7 @@
+if [[ -z "$WAYLAND_DISPLAY" && -z "$DISPLAY" && $- == *l* ]]; then
+    exec bash
+fi
+
 # oh-my-zsh path
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -14,6 +18,9 @@ plugins=(git)
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# Theming Qt apps
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 # load starship
 eval "$(starship init zsh)"
@@ -43,5 +50,3 @@ bindkey -s '^y' 'tmux kill-server \n'
 # Custom CLI menu
 alias menu="./scripts/menu_launcher.sh"
 
-# Init terminal with menu
-menu
