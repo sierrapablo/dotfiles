@@ -1,0 +1,26 @@
+# Keybindings
+keybind = ctrl+shift+alt+ç=new_split:right
+keybind = ctrl+shift+alt+-=new_split:down
+keybind = ctrl+alt+shift+z=close_surface
+
+keybind = ctrl+shift+alt+h=goto_split:left
+keybind = ctrl+shift+alt+j=goto_split:down
+keybind = ctrl+shift+alt+k=goto_split:up
+keybind = ctrl+shift+alt+l=goto_split:right
+
+
+# Fonts
+font-family = Hack Nerd Font Mono
+font-family-bold = Hack Nerd Font Mono Bold
+font-family-italic = Hack Nerd Font Mono Italic
+font-family-bold-italic = Hack Nerd Font Mono Bold Italic
+font-size = 14
+
+# Colors
+background = 1e1e1e
+background-opacity = 0.9
+theme = OneHalfDark 
+
+# Cursor
+cursor-style = bar
+adjust-cursor-thickness = 2
