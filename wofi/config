@@ -1,0 +1,14 @@
+mode=drun
+allow_images=true
+
+key_left=Alt-h
+key_down=Alt-j
+key_up=Alt-k
+key_right=Alt-l
+
+key_expand=Alt-space
+
+key_hide_search=Alt-a
+
+width=485
+height=300
