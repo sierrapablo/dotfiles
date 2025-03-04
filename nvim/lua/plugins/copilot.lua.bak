@@ -1,0 +1,10 @@
+return {
+  "github/copilot.vim",
+  config = function()
+    vim.g.copilot_filetypes = {
+      ["*"] = false,
+    }
+    vim.api.nvim_set_keymap("n", "<F12>", ":Copilot enable<CR>", { noremap = true })
+    vim.api.nvim_set_keymap("n", "<F12>", ":Copilot disable<CR>", { noremap = true })
+  end
+}
