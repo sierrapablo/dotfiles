@@ -1,2 +1,3 @@
-# lazy-lock.json
+# Lazy NVIM lockfiles
+.luarc.json
 lazy-lock.json
