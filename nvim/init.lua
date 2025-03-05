@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -9,6 +10,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
 
 require("options")
@@ -18,3 +20,14 @@ if vim.fn.exists('+termguicolors') then
   vim.o.termguicolors = true
 end
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    os.execute("~/Documents/dotfiles/scripts/tabby_nvim.sh start")
+  end
+})
+
+vim.api.nvim_create_autocmd("VimLeave", {
+  callback = function()
+    os.execute("~/Documents/dotfiles/scripts/tabby_nvim.sh stop")
+  end
+})
